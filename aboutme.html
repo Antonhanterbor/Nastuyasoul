@@ -2,7 +2,6 @@
 <html lang="uk">
 <head>
     <link rel="stylesheet" href="stop_copy.css">
-   <!-- <link rel="stylesheet" href="styles_page.css">-->
     <link rel="stylesheet" href="mobil.css">
     <script>
         // Відключення клавіші F12
@@ -11,7 +10,6 @@
                 event.preventDefault();
             }
         });
-    
         // Відключення правої кнопки миші
         document.addEventListener("contextmenu", function(event) {
             event.preventDefault();
@@ -20,67 +18,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>verse</title>
-    <!-- Підключення шрифту з Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        body {
-           font-family: 'Lora', sans-serif;
-           /*background-color: #f5f5f5; /* Фоновий колір */
-        :before {
+        /*body {
+            font-family: 'Lora', sans-serif;
+            background-image: url('fon/3.jpg'); /* Основний фон */
+        /*    background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            position: relative;
+        } */
+
+        /* Псевдоелемент для накладення з прозорістю */
+        body::before {
             content: '';
             position: absolute;
             top: 0;
             left: 0;
             right: 0;
             bottom: 0;
-            background-image: url('fon/4.JPG');
+            background-image: url('fon/4.JPG'); /* Верхній фон */
             background-size: cover;
             background-position: center;
-            background-attachment: fixed; /* Фіксує фон при прокрутці */
-            opacity: 0.2; /* Налаштування прозорості верхнього фону */
-            z-index: 1;}
+            background-attachment: fixed;
+            opacity: 0.3; /* Прозорість верхнього фону */
+            z-index: 1;
+        }
 
-           background-image: url('fon/4.JPG'); 
-           background: rgba(255, 255, 255, 0.0); /* Легша прозорість */
-           background-size: cover;
-           background-position: center;
-           background-attachment: fixed;
-       }
+        /* Контент, щоб він був над фонами */
+        .centered {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            margin-top: 10px;
+            margin-left: 5px;
+            margin-right: 5px;
+            color: #f8f4f4;
+        }
 
-       .centered {
-           text-align: center;
-           margin-top: 10px;
-           margin-left: 5px;
-           margin-right: 5px;
-           color: #f8f4f4;
-       }
+        p {
+            text-align: justify;
+            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+            font-weight: bold;
+        }
 
-       /*.centered h1 {
-           margin-bottom: 5px;
-       }*/
-       p {
-           text-align: justify;
-           text-shadow: 
-           -1px -1px 0 #000, /* Чорний контур */
-            1px -1px 0 #000,
-           -1px  1px 0 #000,
-            1px  1px 0 #000;
-           font-weight: bold; /* Жирний текст */
-       }
-       /*.justified {
-           text-align: justify;
-       }*/
-       .poem {
-           white-space: pre-line;
-           font-size: 1.2em;
-           line-height: 1.6;
-           margin-top: 0;
-       }
-   </style>
+        .poem {
+            white-space: pre-line;
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin-top: 0;
+        }
+    </style>
 </head>
 <body>
     <div class="centered">
-      <!--  <h1></h1> -->
         <div class="poem">
             <p>
                 В двох словах і не напишеш хто я. Амбіційна дівчина. Все, що роблю – роблю з любов‘ю та повністю віддаюся улюбленій справі. 
@@ -90,7 +84,7 @@
                 Не тільки до людей, також до природи, тварин, всесвіту – до всього, що буде з‘являтися на моєму шляху. Без віри та кохання – існування не можливе. 
                 І головне – це мати бажання. Тоді все здається легким і цікавим, коли хочеться саме тобі. Коли хочеться поринати у справу і насолоджуватися нею, а потім і результатом. 
                 Вірю, що у моїй творчості кожен знайде хоч частинку того, що його стосується.
-                Залюбки буду співпрацювати з усіма та буду вдячна кожному
+                Залюбки буду співпрацювати з усіма та буду вдячна кожному.
             </p>
         </div>
     </div>
