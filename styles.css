@@ -1,0 +1,7 @@
+.centered {
+    text-align: center; /* Центрує текст по горизонталі */
+    margin-top: 50px; /* Відступ зверху */
+    margin-left: 20px; /* Відступ зліва */
+    margin-right: 20px; /* Відступ справа */
+    color: #ad570f; /* Колір тексту */
+}

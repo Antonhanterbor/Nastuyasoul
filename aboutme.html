@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <link rel="stylesheet" href="stop_copy.css">
+    <link rel="stylesheet" href="styles_page.css">
+    <link rel="stylesheet" href="mobil.css">
+    <script>
+        // Відключення клавіші F12
+        document.addEventListener("keydown", function(event) {
+            if (event.key === "F12" || (event.ctrlKey && event.shiftKey && event.key === "I")) {
+                event.preventDefault();
+            }
+        });
+    
+        // Відключення правої кнопки миші
+        document.addEventListener("contextmenu", function(event) {
+            event.preventDefault();
+        });
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>verse</title>
+    <!-- Підключення шрифту з Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="centered">
+      <!--  <h1></h1> -->
+        <div class="poem">
+            <p>
+                В двох словах і не напишеш хто я. Амбіційна дівчина. Все, що роблю – роблю з любов‘ю та повністю віддаюся улюбленій справі. 
+                Часи змінюють мене, але дещо залишається незмінним. Це любов до рідних та любов до тварин. 
+                Мрію про спокій у Світі.
+                Хочу пройти свій шлях з повагою та коханням.
+                Не тільки до людей, також до природи, тварин, всесвіту – до всього, що буде з‘являтися на моєму шляху. Без віри та кохання – існування не можливе. 
+                І головне – це мати бажання. Тоді все здається легким і цікавим, коли хочеться саме тобі. Коли хочеться поринати у справу і насолоджуватися нею, а потім і результатом. 
+                Вірю, що у моїй творчості кожен знайде хоч частинку того, що його стосується.
+                Залюбки буду співпрацювати з усіма та буду вдячна кожному
+            </p>
+        </div>
+    </div>
+</body>
+</html>

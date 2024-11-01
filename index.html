@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stop_copy.css">
+    <link rel="stylesheet" href="styles_main.css">
+    <link rel="stylesheet" href="mobil.css">
+    <script>
+        // Відключення клавіші F12
+        document.addEventListener("keydown", function(event) {
+            if (event.key === "F12" || (event.ctrlKey && event.shiftKey && event.key === "I")) {
+                event.preventDefault();
+            }
+        });
+        // Відключення правої кнопки миші
+        document.addEventListener("contextmenu", function(event) {
+            event.preventDefault();
+        });
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nastunyasoul</title>
+     <script>
+        let menuVisible = false; // Стан видимості меню
+        function toggleMenu() {
+            menuVisible = !menuVisible; // Змінюємо стан видимості меню
+            const menuList = document.querySelector('.menu-list');
+            if (menuVisible) {
+                menuList.classList.add('show'); // Додаємо клас для відображення
+            } else {
+                menuList.classList.remove('show'); // Видаляємо клас для приховування
+            }
+        }
+// Закриваємо меню, якщо натискаємо поза ним
+        document.addEventListener('click', function(event) {
+            const menu = document.querySelector('.menu');
+            if (!menu.contains(event.target)) {
+                menuVisible = false;
+                menu.querySelector('.menu-list').classList.remove('show');
+            }
+        });
+
+        function loadPage(url) {
+            document.getElementById('contentFrame').src = url;
+            menuVisible = false; // Закриваємо меню при завантаженні нової сторінки
+            document.querySelector('.menu-list').classList.remove('show'); // Сховати меню
+        }
+    </script>
+</head>
+<body>
+    <!-- Основний контейнер, що ділиться на 2 рядки -->
+    <div class="container">
+        <!-- Горизонтальна частина, що займає 1/5 сторінки -->
+        <div class="header ">
+            <h1>КОХАННЯ, що перемогло війну</h1>
+        </div>
+    <!-- Вертикальна частина, що займає 4/5 сторінки -->
+        <div class="vertical-container">
+            <!-- Ліва вертикальна частина з кнопками - 1/4 ширини -->
+            <div class="left">
+                <div class="menu">
+                    <div class="menu-icon" onclick="toggleMenu()">Вірши &#9776;</div>
+                    <ul class="menu-list">
+                        <li><a href="#" onclick="loadPage('verse.html'); return false;">Кричить і плаче Україна </a></li>
+                        <li><a href="#" onclick="loadPage('verse2.html'); return false;">Прочитайте. </a></li>
+                        <li><a href="#" onclick="loadPage('verse1.html'); return false;">Без назви</a></li>                        
+                        <!-- Додайте інші кнопки за потреби -->
+                    </ul>
+                </div>
+                <button class="button" onclick="loadPage('thoughts.html')">Думки</button>
+                <button class="button" onclick="loadPage('aboutme.html')">Про мене</button>
+            </div>
+            <!-- Права вертикальна частина з iframe - 3/4 ширини -->
+            <div class="right">
+                <iframe id="contentFrame" src="about:blank" class="iframe-content"></iframe>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

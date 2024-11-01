@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <link rel="stylesheet" href="stop_copy.css">
+    <link rel="stylesheet" href="styles_page.css">
+    <link rel="stylesheet" href="mobil.css">
+    <script>
+        // Відключення клавіші F12
+        document.addEventListener("keydown", function(event) {
+            if (event.key === "F12" || (event.ctrlKey && event.shiftKey && event.key === "I")) {
+                event.preventDefault();
+            }
+        });
+    
+        // Відключення правої кнопки миші
+        document.addEventListener("contextmenu", function(event) {
+            event.preventDefault();
+        });
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>verse</title>
+    <!-- Підключення шрифту з Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="centered">
+        <h1>Кричить і плаче Україна</h1>
+        <div class="poem">
+            <p>
+                Кричить і плаче Україна,  
+                Гуде весь світ навколо нас.  
+                Не плач, не плач, моя рідненька,  
+                Ми всі за тебе, світ – за нас.  
+                
+                Ми вистоїмо, моя ненька,  
+                Свободу, гідність – нас не взять!  
+                Бо спільна мрія об‘єднала,  
+                Соборність нашу не здолать.  
+                
+                Я знаю, боляче дивись,  
+                Немовля плаче в темноті  
+                І люди наші, українці  
+                Страждають десь на самоті.  
+                
+                А там герої наші смілі,  
+                Без страху захищають нас.  
+                А там лежить солдат хоробрий,  
+                Та вже не встане воювать…  
+                
+                Ми зможемо, ми подолаєм,  
+                Ми виженемо ворогів.  
+                Бо в нас є сила, в нас є воля,  
+                Ми захищаємо свій дім.  
+                
+                Все буде, буде Україна,  
+                За нами правда, з нами Бог  
+                Сяде за стіл уся родина  
+                Бо вистоїть моя країна.  
+                
+                12-13 квітня 2022 року
+            </p>
+        </div>
+    </div>
+</body>
+</html>

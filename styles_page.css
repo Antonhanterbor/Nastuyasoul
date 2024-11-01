@@ -1,0 +1,48 @@
+        body {
+            font-family: 'Lora', sans-serif;
+            /*background-color: #f5f5f5; /* Фоновий колір */
+            /* background-image: url('Fon/3.jpg'); */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .centered {
+            text-align: center;
+            margin-top: 50px;
+            margin-left: 20px;
+            margin-right: 20px;
+            color: #f7f8f8;
+        }
+
+        .centered h1 {
+            margin-bottom: 5px;
+            text-shadow: 
+            -1px -1px 0 #000, /* Чорний контур */
+             1px -1px 0 #000,
+            -1px  1px 0 #000,
+             1px  1px 0 #000;
+            font-weight: bold; /* Жирний текст */
+        }
+        .centered p {
+            margin-bottom: 4px;
+            text-shadow: 
+            -1px -1px 0 #000, /* Чорний контур */
+             1px -1px 0 #000,
+            -1px  1px 0 #000,
+             1px  1px 0 #000;
+            font-weight: bold; /* Жирний текст */
+        }
+        /*p {
+            text-align: justify;
+        }*/
+        /*.justified {
+            text-align: justify;
+        }*/
+        .poem {
+            white-space: pre-line;
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin-top: 0;
+        }
+    
