@@ -3,7 +3,7 @@
             margin: 0;
             padding: 0;
             height: 100%;
-            background-image: url("Fon/3.jpg"); /* Спільний фон */
+            background-image: url('Fon/3.jpg'); /* Спільний фон */
             background-size: cover;
             background-position: center;
             background-attachment: fixed; /* Фіксує фон при прокрутці */
