@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Накладення фону</title>
+    <style>
+        /* Основний фон для body */
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background-image: url('fon/4.JPG'); /* Основний фон */
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        /* Напівпрозорий шар накладається поверх body */
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5); /* Напівпрозорий фон (чорний) */
+            z-index: 1; /* Забезпечує, що накладений фон буде зверху */
+        }
+
+        /* Контент має бути над накладеними фонами */
+        .content {
+            position: relative;
+            z-index: 2; /* Контент відображається над усіма шарами */
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>Основний заголовок</h1>
+        <p>Тут розміщено текст поверх напівпрозорого шару та основного фону.</p>
+    </div>
+</body>
+</html>

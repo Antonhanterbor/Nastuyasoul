@@ -1,9 +1,10 @@
         /* Встановлюємо висоту для кореневого контейнера на всю висоту екрану */
-        body, html {
+        body, 
+        html {
             margin: 0;
             padding: 0;
             height: 100%;
-            background-image: url('fon/3.JPG '); /* Спільний фон */
+            background-image: url('fon/3.jpg'); /* Спільний фон */
             background-size: cover;
             background-position: center;
             background-attachment: fixed; /* Фіксує фон при прокрутці */

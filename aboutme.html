@@ -26,7 +26,21 @@
         body {
            font-family: 'Lora', sans-serif;
            /*background-color: #f5f5f5; /* Фоновий колір */
-           /* background-image: url('Fon/3.jpg'); */
+        :before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('fon/4.JPG');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.2; /* Налаштування прозорості верхнього фону */
+            z-index: 1;}
+
+           background-image: url('fon/4.JPG'); 
+           background: rgba(255, 255, 255, 0.0); /* Легша прозорість */
            background-size: cover;
            background-position: center;
            background-attachment: fixed;
